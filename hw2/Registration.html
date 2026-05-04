@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - GREENSHOP </title>
+    <style>
+         body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1E1E1E;
+        }
+        .main-wrapper {
+            position: relative;
+            width: 500px;
+            background-color: #FFFFFF;
+            border-bottom: 10px solid #46A358;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-top: 52px;
+            padding-bottom: 50px;
+            display: flow-root;
+        }
+        .close-btn {
+            position: absolute;
+            top: 13px;
+            right: 13px;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            z-index: 999;
+        }
+        .tabs {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        .tab-login, .tab-divider, .tab-register {
+            font-size: 20px;
+            font-weight: 500;
+            display: inline-block;
+        }
+        .tab-divider {
+            color: #3D3D3D;
+            font-family: "Cera Pro";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 250;
+            line-height: 16px;
+        }
+        .tab-login {
+            color: #3D3D3D;
+            font-family: "Cera Pro";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+        }
+        .tab-register {
+            color: #46A358;
+            font-family: "Cera Pro";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+        }
+        .subtitle {
+            color: #3D3D3D;
+            font-family: "Cera Pro";
+            font-size: 13px;
+            font-style: normal;
+            text-align: left; 
+            margin: 0 100px 14px 100px;
+            display: block;
+        }
+        .input-field {
+            width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid #EAEAEA;
+            padding: 0 14px;
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto 16px auto;
+            font-family: "Cera Pro";
+        }
+        .first-input {
+            margin-top: 14px;
+        }
+        .input-field::placeholder {
+            color: #A5A5A5;
+            font-family: "Cera Pro";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        .password-container {
+            position: relative;
+            width: 300px;
+            margin: 0 auto 14px;
+        }
+        .eye-icon {
+            position: absolute;
+            top: 10px;                      
+            right: 10px;     
+            width: 20px;
+            cursor: pointer;
+        }
+        .register-btn{
+            display: block;
+            width: 300px;
+            height: 45px;
+            margin: 41px auto 36px auto;
+            background: #46A358;
+            color: #FFF;
+            border: none;
+            border-radius: 5px;
+            font-family: "Cera Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .divider {
+            color: #3D3D3D;
+            font-family: "Cera Pro";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            margin-bottom: 27px;
+            text-align: center;
+        }
+        .btn-social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px; 
+            margin: 0 auto 15px auto;
+            border-radius: 5px;
+            border: 1px solid #EAEAEA;
+            box-sizing: border-box;
+            color: #727272;
+            font-family: "Cera Pro";
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 16px;
+        }
+        .btn-google, .btn-facebook {
+            padding: 0;
+        }
+        .btn-google {
+            padding: 13px 0 11px 0;
+            margin-bottom: 15px;
+        }
+        .btn-facebook {
+            padding: 14px 0 10px 0;
+            margin-bottom: 0;
+        }
+        .btn-social img {
+            width: 20px; 
+            height: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+        <div class="main-wrapper">
+            <img src="images/X.png" alt="Close" class="close-btn">
+        <div class="tabs">
+            <span class="tab-login">Login</span>
+            <span class="tab-divider">|</span>
+            <span class="tab-register">Register</span>
+        </div>
+        <p class="subtitle">Enter your email and password to register.</p>
+    <form>
+        <input type="text" placeholder="Username" class="input-field">
+        <input type="email" placeholder="Enter your email address" class="input-field"> 
+        <div class="password-container">
+                <input type="password" placeholder="Password" class="input-field" style="margin-left:0; margin-right:0;">
+                <img src="images/Hide.png" alt="Hide" class="eye-icon">
+        </div>
+        <input type="password" placeholder="Confirm Password" class="input-field">         
+        <button type="submit" class="register-btn">Register</button>
+    </form>
+    <div class="divider">Or register with</div>
+    <button class="btn-social btn-google">
+        <img src="images/google 1.png" alt="Google"> Continue with Google
+    </button>
+    <button class="btn-social btn-facebook">
+        <img src="images/facebook 1.png" alt="Facebook"> Continue with Facebook
+    </button>
+</div>
+</body>
+</html>
