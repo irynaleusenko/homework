@@ -1,4 +1,30 @@
 @font-face {
     font-family: "CeraPro Regular";
-    scr: url('../fonts/CeraPro-Regular.eot'), url('../fonts/CeraPro-Regular.ttf');
+    src: url('../fonts/CeraPro-Regular.ttf'), url('../fonts/CeraPro-Regular.eot');
+}
+
+@font-face {
+    font-family: "CeraPro Medium";
+    src: url('../fonts/CeraPro-Medium.ttf'), url('../fonts/CeraPro-Medium.eot');
+}
+
+@font-face {
+    font-family: "CeraPro Bold";
+    src: url('../fonts/CeraPro-Bold.ttf'), url('../fonts/CeraPro-Bold.eot');
+}
+
+@font-face {
+    font-family: "CeraPro Black";
+    src: url('../fonts/CeraPro-Black.ttf'), url('../fonts/CeraPro-Black.eot');
+}
+.header{
+    padding: 30px 120px 12px 120px;
+    display: flex;
+    justify-content:space-between;
+    align-items: start;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.50);
+}
+
+.menu{
+    display: flex;
 }
