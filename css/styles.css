@@ -27,11 +27,12 @@
     list-style-type: none;
     text-decoration: none;
     color: inherit;
-    font-size: 16px;
 }
 
+.container{
+    padding: 30px 120px 52px;
+}
 .header{
-    padding: 30px 120px 12px 120px;
     display: flex;
     justify-content:space-between;
     align-items: start;
@@ -48,11 +49,12 @@
     font-family: "CeraPro Regular", sans-serif;
     border-bottom: 3px solid transparent;
     padding: 8px 0 25px;
+    font-size: 16px;
 }
 
 .active{
     font-family: "CeraPro Bold", sans-serif;
-    border-color: #46A358;
+    border-bottom: 3px solid #46A358;
 }
 
 .headerBtn{
@@ -68,19 +70,20 @@
 
 .hero{
     background-color: rgba(245, 245, 245, 0.5);
-    margin: 12px 93px 0 147px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 68px 43px;
-    
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center; 
 }
+
+
 .hero-subtitle{
     color: #3D3D3D;
     font-family: "CeraPro Medium", sans-serif;
     font-size: 14px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+    line-height: 16px;
+    padding: 68px 43px 7px
 
 }
 
@@ -88,15 +91,14 @@
     color: #3D3D3D;
     font-family: "CeraPro Black", sans-serif;
     font-size: 70px;
+    line-height: 70px;
     font-style: normal;
     text-transform: uppercase;
-    margin: 10px 0 5px;
+    padding: 6px 40px;
 }
 
 .hero-title span{
     color: #46A358;
-    font-family: "CeraPro Black", sans-serif;
-    font-size: 70px;
 }
 
 .hero-description{
@@ -104,7 +106,8 @@
     font-family: "CeraPro Regular", sans-serif;
     font-size: 14px;
     font-style: normal;
-    margin: 5px 0 44px;
+    padding-left: 43px;
+    line-height: 24px;
 }
 
 .hero-btn{
@@ -115,4 +118,29 @@
     display: flex;
     align-items: center;
     padding: 10px 26px;
+    margin: 44px 41px 85px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.hero-image-wrapper {
+    position: relative; 
+    display: flex;
+}
+
+.main-plant {
+    align-self: stretch;
+    flex-grow: 1;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.decor-plant {
+    position: absolute;
+    left: 55px;
+    bottom: 17px;
 }
