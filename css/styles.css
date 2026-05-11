@@ -66,3 +66,53 @@
     padding: 8px 17px;
 }
 
+.hero{
+    background-color: rgba(245, 245, 245, 0.5);
+    margin: 12px 93px 0 147px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 68px 43px;
+    
+}
+.hero-subtitle{
+    color: #3D3D3D;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+}
+
+.hero-title{
+    color: #3D3D3D;
+    font-family: "CeraPro Black", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    text-transform: uppercase;
+    margin: 10px 0 5px;
+}
+
+.hero-title span{
+    color: #46A358;
+    font-family: "CeraPro Black", sans-serif;
+    font-size: 70px;
+}
+
+.hero-description{
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    margin: 5px 0 44px;
+}
+
+.hero-btn{
+    font-family: "CeraPro Medium", sans-serif;
+    border-radius: 6px;
+    background: #46A358;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 26px;
+}
