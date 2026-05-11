@@ -1,7 +1,24 @@
 *, *::before, *::after {
     box-sizing: border-box;
-}
-body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
     margin: 0;
     padding: 0;
+    border: none;
+    background-color: transparent;
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
