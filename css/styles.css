@@ -141,3 +141,43 @@
     left: 55px;
     bottom: 17px;
 }
+
+.shop-container{
+    display: flex;
+    margin: 171px 106px 207px;
+    gap: 50px;
+}
+
+.categories{
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    padding: 14px 189px 377px 30px;
+    
+
+}
+
+.category-list{
+    color: #3D3D3D;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 40px;
+}
+
+.active {
+    color: #46A358;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 40px;
+    border: none;
+}
+
+.sidebar-banner{
+    margin-top: 0;
+    position: relative;
+    background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
+    text-align: center;
+}
