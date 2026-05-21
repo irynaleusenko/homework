@@ -168,7 +168,7 @@
     font-family: "CeraPro Bold", sans-serif;
     font-size: 18px;
     font-style: normal;
-    padding: 14px 169px 377px 18px;
+    margin: 14px 18px 377px 18px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -193,20 +193,14 @@
     font-family: "CeraPro Bold", sans-serif;
     border-bottom: none;
 }
-
 .sidebar{
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 23%;
-    width: 80%;
+    width: 100%;
+    max-width: 310px;
+    box-sizing: border-box;
 }
 
-.sidebar-banner {
-    position: relative;
-}
 
-.sidebar-banner img{
+.banner-img{
     display: block;
     object-fit: contain;
     width: 100%;
@@ -215,9 +209,8 @@
 .product-catalog{
     display: flex;
     flex-direction: column;
-    flex: 0 1 77%;
-    max-width: 77%;
 }
+
 
 .catalog-header{
     display: flex;
@@ -225,7 +218,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 38px;
-    width: 100%;
 }
 
 .tabs{
@@ -268,12 +260,12 @@
 }
 
 .product-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 76px 33px;
-    align-items: start;
-    margin-bottom: 100px;
-    position: relative;
+    margin-bottom: 90px;   
 }
 
 .product-card {
@@ -281,9 +273,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    height: auto;
-    width: 100%;
+    box-sizing: border-box;
+    width: calc((100% - (33px * 2)) / 3);
+       
 }
+
 
 
 .product-image{
@@ -293,21 +287,15 @@
     align-items: center;
     box-sizing: border-box;
     margin-bottom: 12px;
-    padding-bottom: 120%;
-    position: relative;
-    width: 100%;
 }
 
 .product-card .product-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     padding: 25px 4px;
     box-sizing: border-box;
     object-fit: contain;
-    display: block;
+    width: 250px;
+    height: 250px;
+
 }
 
 
@@ -335,7 +323,6 @@
     justify-content: flex-end;
     gap: 10px;
     margin-bottom: 80px;
-    width: 100%;
     box-sizing: border-box;
 }
 
@@ -345,16 +332,17 @@
     justify-content: center;
     color: #3D3D3D;
     font-family: "CeraPro Light", sans-serif;
-    font-size: 18px;
     border-radius: 4px;
     border: 1px solid #E5E5E5;
     box-sizing: border-box;
-    padding: 10px 12px;
+    padding: 8px;
 }
+
 .page-item:hover {
     border-color: #46A358;
     color: #46A358;
 }
+
 .page-item.active {
     background-color: #46A358;
     border-color: #46A358;
@@ -362,43 +350,45 @@
     font-family: "CeraPro Bold", sans-serif;
 }
 
-
 .promo-banners {
     display: flex;
     justify-content: space-between;
     margin-top: 69px;
     gap: 28px;
-    width: 100%;
     box-sizing: border-box;
 }
 
-.promo-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex: 1;
-    background: #FBFBFB;
-    box-sizing: border-box;
-    position: relative;
-}
 
-.promo-banners .promo-image {
-    flex: 0 0 45%;
-    display: flex;
-    justify-content: center;
-}
-
-.promo-banners .promo-image img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.promo-banners .promo-content {
+.promo-content {
+    margin: 37px 30px 46px auto;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: relative;
     text-align: right;
+    z-index: 2;
+}
+
+.promo-card {
+    flex: 1;
+    min-width: 280px;
+    height: 250px;         
+    background: #FBFBFB;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: visible;    
+    box-sizing: border-box;
+}
+
+.promo-card img {
+    position: absolute;
+    left: 0;
+    top: -52px;
+    height: 292px;
+    width: auto; 
+    object-fit: contain;
+    z-index: 1;
 }
 
 .promo-title {
@@ -414,9 +404,10 @@
 .promo-text {
     color: #727272;
     font-family: "CeraPro Regular", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     line-height: 24px;
+    padding-left: 264px;
     padding-bottom: 25px;
 }
 
@@ -437,16 +428,15 @@
     display: inline-block;
 }
 
-
 .blog-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
     box-sizing: border-box;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     margin-top: 138px;
+    height: auto;
 }
 
 .blog-main-title {
@@ -454,7 +444,6 @@
     font-family: "CeraPro Bold", sans-serif;
     font-size: 30px;
     font-style: normal;
-    line-height: 16px;
     margin-bottom: 15px;
 }
 
@@ -464,16 +453,13 @@
     font-size: 14px;
     font-style: normal;
     line-height: 24px;
-    margin-bottom: 35px;
 }
 
 .blog-grid  {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     box-sizing: border-box;
     gap: 44px;
-    background-color: #FBFBFB;
 }
 
 .blog-card {
@@ -481,14 +467,13 @@
     flex-direction: column;
     flex: 1;
     box-sizing: border-box;
-    width: 100%;
+    background: #FBFBFB;
 }
 
 .blog-img-plant {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .blog-img-plant img {
@@ -501,8 +486,6 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    height: 100%;
-    margin-bottom: 68px;
 }
 
 .blog-meta {
@@ -521,6 +504,7 @@
     font-style: normal;
     line-height: 26px;
     margin-bottom: 4px;
+    width: 90%;
 }
 
 .blog-post-excerpt {
@@ -538,9 +522,18 @@
     font-size: 14px;
     font-style: normal;
     line-height: 16px;
+    padding-bottom: 12px;
+}
+
+.blog-reade-more.active{
+    color: #46A358;
 }
 
 .blog-reade-more svg {
     vertical-align: middle;
     display: inline-block;
+}
+
+.blog-reade-more svg path {
+    fill: currentColor;
 }
