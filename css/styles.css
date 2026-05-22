@@ -360,7 +360,7 @@
 
 
 .promo-content {
-    margin: 37px 30px 46px auto;
+    margin: 37px 30px 46px 3px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -408,7 +408,6 @@
     font-style: normal;
     line-height: 24px;
     padding-left: 264px;
-    padding-bottom: 25px;
 }
 
 .promo-btn {
@@ -421,6 +420,7 @@
     font-style: normal;
     line-height: 20px;
     gap: 5px;
+    margin-top: 25px;
 }
 
 .promo-banners .promo-btn svg {
