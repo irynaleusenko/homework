@@ -48,8 +48,8 @@
     display: flex;
     gap: 50px;
     list-style: none;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 
 .menu-list > li {
@@ -83,7 +83,7 @@
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 54px;
+    top: 56px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #eaf0e8;
@@ -99,13 +99,13 @@
 }
 
 .dropdown-menu a {
-    font-size: 14px;
+    font-size: 15px;
     color: #3D3D3D;
     font-family: "CeraPro Regular", sans-serif;
     display: block;
     border-bottom: none;
     white-space: nowrap;
-    padding: 8px 14px;
+    padding: 9px 14px;
     transition: all 0.2s ease;
     position: relative;
 }
@@ -142,7 +142,7 @@
 .next-menu {
     display: none;
     position:absolute;
-    top: -101px; 
+    top: -111px; 
     left: calc(100% + 2px);
     background-color: #eaf0e8;
     list-style: none;
@@ -153,8 +153,8 @@
 }
 
 .next-dropdown-menu a {
-    padding: 8px 14px;
-    font-size: 14px;
+    padding: 9px 14px;
+    font-size: 15px;
     color: #3D3D3D;
     font-family: "CeraPro Regular", sans-serif;
 }
