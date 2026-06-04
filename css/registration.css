@@ -124,7 +124,15 @@
     text-align: center;
     box-sizing: border-box;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
+
+.register-btn:hover {
+    transform: scale(1.1); 
+}
+
+
 .divider {
     color: #3D3D3D;
     font-family: "Cera Pro";
@@ -160,6 +168,11 @@
     padding: 14px 0 10px 0;
     margin-bottom: 0;
 }
+
+.btn-social:hover {
+    transform: scale(1.02);
+}
+
 .btn-social img {
     width: 20px; 
     height: 20px;
