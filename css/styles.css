@@ -332,6 +332,7 @@
     border-bottom: none;
 }
 
+
 .sidebar{
     width: 100%;
     max-width: 310px;
@@ -353,11 +354,34 @@
     transition: color 0.3s ease, font-family 0.3s ease;
 }
 
-.category-item:hover .category-name,
-.category-item:hover .category-count {
+
+.category-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.category-link:hover .category-name,
+.category-link:hover .category-count {
+    color: #46A358;
+}
+
+.category-checkbox:checked ~ .category-name,
+.category-checkbox:checked ~ .category-count {
     color: #46A358;
     font-family: "CeraPro Bold", sans-serif;
 }
+
+.category-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    opacity: 0;
+}
+
 
 .price-filter {
     width: 100%;

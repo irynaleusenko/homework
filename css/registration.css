@@ -7,8 +7,9 @@
     background-color: #1E1E1E;
 }
 .main-wrapper {
-    position: relative;
-    width: 500px;
+    position: relative;  
+    width: 100%;
+    max-width: 500px;
     background-color: #FFFFFF;
     border-bottom: 10px solid #46A358;
     box-sizing: border-box;
@@ -29,72 +30,68 @@
 .tabs {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 40px;
+
 }
 .tab-login, .tab-divider, .tab-register {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 500px;
     display: inline-block;
 }
 .tab-divider {
     color: #3D3D3D;
-    font-family: "Cera Pro";
+    font-family: "CeraPro Light", sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 250;
     line-height: 16px;
 }
 .tab-login {
     color: #3D3D3D;
-    font-family: "Cera Pro";
+    font-family: "CeraPro Medium", sans-serif;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
+    margin-bottom: 40px;
 }
 .tab-register {
     color: #46A358;
-    font-family: "Cera Pro";
+    font-family: "CeraPro Medium", sans-serif;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
+
 }
 .subtitle {
     color: #3D3D3D;
-    font-family: "Cera Pro";
+    font-family: "CeraPro Regular", sans-serif;
     font-size: 13px;
     font-style: normal;
     text-align: left; 
-    margin: 0 100px 14px 100px;
+    margin: 0 100px;
     display: block;
 }
 .input-field {
-    width: 300px;
-    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    max-height: 40px;
     border-radius: 5px;
     border: 1px solid #EAEAEA;
-    padding: 0 14px;
+    padding: 12px 14px ;
     box-sizing: border-box;
     display: block;
-    margin: 0 auto 16px auto;
-    font-family: "Cera Pro";
+    margin: 14px 100px 16px 100px;
+    font-family: "CeraPro Regular", sans-serif;
 }
-.first-input {
-    margin-top: 14px;
-}
+
 .input-field::placeholder {
     color: #A5A5A5;
-    font-family: "Cera Pro";
+    font-family: "CeraPro Regular", sans-serif;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
     line-height: 16px;
 }
 .password-container {
     position: relative;
-    width: 300px;
-    margin: 0 auto 14px;
+    width: 100%;
+    max-width: 300px;
+    margin: 14px 100px 16px 100px;
 }
 .password-container .input-field {
     margin-left: 0;
@@ -109,17 +106,17 @@
 }
 .register-btn {
     display: block;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 45px;
-    margin: 41px auto 36px auto;
+    margin: 41px 100px 36px 100px;
     background: #46A358;
     color: #FFF;
     border: none;
     border-radius: 5px;
-    font-family: "Cera Pro";
+    font-family: "CeraPro Bold", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
     line-height: 16px;
     text-align: center;
     box-sizing: border-box;
@@ -135,38 +132,34 @@
 
 .divider {
     color: #3D3D3D;
-    font-family: "Cera Pro";
+    font-family: "CeraPro Regular", sans-serif;
     font-size: 13px;
     font-style: normal;
-    font-weight: 400;
     line-height: 16px;
-    margin-bottom: 27px;
     text-align: center;
 }
 .btn-social {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px; 
-    margin: 0 auto 15px auto;
+    width: 100%;
+    max-width: 300px; 
+    margin: 27px 100px 15px 100px;
     border-radius: 5px;
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
     color: #727272;
-    font-family: "Cera Pro";
+    font-family: "CeraPro Medium", sans-serif;
     font-size: 13px;
-    font-weight: 500;
     line-height: 16px;
     background-color: transparent;
     cursor: pointer;
 }
 .btn-google {
     padding: 13px 0 11px 0;
-    margin-bottom: 15px;
 }
 .btn-facebook {
     padding: 14px 0 10px 0;
-    margin-bottom: 0;
 }
 
 .btn-social:hover {
